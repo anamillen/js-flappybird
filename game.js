@@ -1,5 +1,11 @@
 const RAD = Math.PI / 180;
 const scrn = document.getElementById("canvas");
+
+// the size fix 1
+scrn.width = window.innerWidth;
+scrn.height = window.innerHeight;
+
+
 const sctx = scrn.getContext("2d");
 scrn.tabIndex = 1;
 scrn.addEventListener("click", () => {
