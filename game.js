@@ -112,7 +112,9 @@ const pipe = {
     if (frames % 100 == 0) {
       this.pipes.push({
         x: parseFloat(scrn.width),
-        y: -210 * Math.min(Math.random() + 1, 1.8),
+        // original bottom pipe bottom : y: -210 * Math.min(Math.random() + 1, 1.8),
+        // changing the lower border of bottom pipes
+        y: -75 * Math.min(Math.random() + 1, 1.8),
       });
     }
     this.pipes.forEach((pipe) => {
