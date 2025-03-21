@@ -134,7 +134,9 @@ const bird = {
   ],
   rotatation: 0,
   x: 50,
-  y: 100,
+  // original bird y position fix : y: 100
+  // bird y position fix
+  y: parseFloat(scrn.height) / 2.25,
   speed: 0,
   gravity: 0.125,
   thrust: 3.6,
