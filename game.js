@@ -78,7 +78,7 @@ const gnd = {
   update: function () {
     if (state.curr != state.Play) return;
     this.x -= dx;
-    this.x = this.x % (this.sprite.width / 2);
+    this.x = this.x % (this.sprite.width / 4);
   },
 };
 const bg = {
@@ -114,7 +114,7 @@ const pipe = {
         x: parseFloat(scrn.width),
         // original bottom pipe bottom : y: -210 * Math.min(Math.random() + 1, 1.8),
         // changing the lower border of bottom pipes
-        y: -75 * Math.min(Math.random() + 1, 1.8),
+        y: -50 * Math.min(Math.random() + 1, 1.8),
       });
     }
     this.pipes.forEach((pipe) => {
