@@ -2,8 +2,8 @@ const RAD = Math.PI / 180;
 const scrn = document.getElementById("canvas");
 
 // the size fix 1
-scrn.width = window.innerWidth;
-scrn.height = window.innerHeight;
+scrn.width = Math.min(450, window.innerWidth);
+scrn.height = Math.min(925, window.innerHeight);
 
 
 const sctx = scrn.getContext("2d");
@@ -114,7 +114,7 @@ const pipe = {
         x: parseFloat(scrn.width),
         // original bottom pipe bottom : y: -210 * Math.min(Math.random() + 1, 1.8),
         // changing the lower border of bottom pipes
-        y: -50 * Math.min(Math.random() + 1, 1.8),
+        y: -40 * Math.min(Math.random() + 1, 1.8),
       });
     }
     this.pipes.forEach((pipe) => {
@@ -303,7 +303,7 @@ const UI = {
 };
 
 gnd.sprite.src = "img/ground.png";
-bg.sprite.src = "img/BG.png";
+bg.sprite.src = "img/BG1.png";
 pipe.top.sprite.src = "img/toppipe.png";
 pipe.bot.sprite.src = "img/botpipe.png";
 UI.gameOver.sprite.src = "img/go.png";

@@ -5,6 +5,9 @@
     display: block;
     margin: 0;
     padding: 0;
+    max-width: 450px;
+    max-height: 1000px;
+
     
 }
 
@@ -13,6 +16,7 @@
 the size fix
 */
 html, body {
+    max-width: 450px;
     margin: 0 !important;
     padding: 0 !important;
 }
